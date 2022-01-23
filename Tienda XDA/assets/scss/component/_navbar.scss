@@ -1,0 +1,92 @@
+.navbar-brand {
+    background-color: $color-smoky-black;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px){
+      background-color: $color-smoky-black;
+      width: 80px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+.navbar-logo {
+    color: $color-white;
+    font-family: $ff-old-standard-tt;
+    font-size: $fz-x-large;
+    @media screen and (min-width: 768px){
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      text-align: center;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: vertical-lr;
+      font-size: $fz-xx-large;
+}
+}
+
+.menu a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    max-width: 200px;
+    background: $color-white;
+    font-family: $ff-raleway;
+    font-weight: bold;
+  }
+
+  .menu input[type="checkbox"], .menu .fa-bars, .menu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+  }
+   
+  
+
+  .menu .fa-bars, .menu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
+  
+  .menu input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .menu {
+    color: $color-smoky-black;
+    position: relative;
+    background:$color-white;
+    min-height: 48px;
+  }
+ 
+  .menu nav {
+    display: none;
+  }
+  
+  .menu input:checked ~ nav {
+    display: block;
+  }
+  
+  .menu input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  .menu input:not(:checked) ~ .fa-times {
+    display: none;
+  }

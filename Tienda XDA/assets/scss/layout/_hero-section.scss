@@ -1,0 +1,17 @@
+.hero-section{
+    @media screen and (min-width: 768px){
+        float: right;
+        width: 60%;
+        height: auto;
+        margin-top: 40px;
+    }
+    @media screen and (min-width: 992px){
+        float: right;
+        width: 60%;
+        margin-top: 90px;
+    }
+   img{
+    width: 100%;
+
+}      
+}

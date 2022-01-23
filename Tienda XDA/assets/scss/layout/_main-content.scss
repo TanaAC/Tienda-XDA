@@ -1,0 +1,48 @@
+.main-content {
+  @media screen and (min-width: 768px){
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 992px){
+    margin-top: 90px;
+  }
+    margin: 20px 30px 0 40px;
+  &__title{
+      font-family: $ff-old-standard-tt;
+  } 
+
+  &__paragraph {
+      font-family: $ff-raleway;
+      color: $color-granite-gray;
+      line-height: 25px;
+      font-size: $fz-small ;
+      margin-bottom: 15px;
+}
+
+  &__paragraph--2{
+    font-family: $ff-raleway;
+    color: $color-granite-gray;
+    line-height: 25px;
+    font-size: $fz-small ;
+    margin-bottom: 15px;
+    @media screen and (max-width: 400px){
+      display: none;
+    }
+  }
+
+ 
+     
+
+  &__button {
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 16px;
+    font-family: "Raleway";
+    font-weight: bold;
+    margin-bottom: 25px;
+    &:hover{
+      border: 2px solid $color-quick-silver;
+      color: $color-quick-silver;
+    }
+  }
+}
