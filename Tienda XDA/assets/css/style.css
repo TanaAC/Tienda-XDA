@@ -45,7 +45,7 @@
   }
 }
 
-.menu a {
+.menu-nav a {
   color: inherit;
   text-decoration: none;
   display: block;
@@ -56,7 +56,7 @@
   font-weight: bold;
 }
 
-.menu input[type=checkbox], .menu .fa-bars, .menu .fa-times {
+.menu-nav input[type=checkbox], .menu-nav .fa-bars, .menu-nav .fa-times {
   position: absolute;
   box-sizing: border-box;
   margin: 0;
@@ -67,40 +67,40 @@
   height: 48px;
 }
 @media screen and (min-width: 768px) {
-  .menu input[type=checkbox], .menu .fa-bars, .menu .fa-times {
+  .menu-nav input[type=checkbox], .menu-nav .fa-bars, .menu-nav .fa-times {
     display: none;
   }
 }
 
-.menu .fa-bars, .menu .fa-times {
+.menu-nav .fa-bars, .menu-nav .fa-times {
   font-size: 48px;
   pointer-events: none;
 }
 
-.menu input[type=checkbox] {
+.menu-nav input[type=checkbox] {
   opacity: 0;
 }
 
-.menu {
+.menu-nav {
   color: #0c0910;
   position: relative;
   background: #fff;
   min-height: 48px;
 }
 
-.menu nav {
+.menu-nav nav {
   display: none;
 }
 
-.menu input:checked ~ nav {
+.menu-nav input:checked ~ nav {
   display: block;
 }
 
-.menu input:checked ~ .fa-bars {
+.menu-nav input:checked ~ .fa-bars {
   display: none;
 }
 
-.menu input:not(:checked) ~ .fa-times {
+.menu-nav input:not(:checked) ~ .fa-times {
   display: none;
 }
 
